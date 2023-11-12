@@ -1,0 +1,12 @@
+{
+  "rules": {
+    "no-descending-specificity": null,
+    "rule-empty-line-before": null,
+    "selector-class-pattern": null,
+    "at-rule-empty-line-before": null,
+    "font-family-no-missing-generic-family-keyword": null,
+    "block-no-empty": null,
+    "no-invalid-position-at-import-rule": null
+  },
+  "extends": ["stylelint-config-recess-order", "stylelint-config-recommended-scss"]
+}
