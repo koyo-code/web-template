@@ -16,7 +16,7 @@ mix.setPublicPath("app");
 let configOption = {
   module: {
     rules: [
-      { 
+      {
         test: /\.scss/,
         loader: "import-glob-loader",
       },
@@ -73,7 +73,11 @@ if (wordpress) {
 
 mix.browserSync(browser);
 mix.disableNotifications();
-mix.sourceMaps(true, "inline-source-map");
+
+if (!production) {
+  mix.sourceMaps(true, "inline-source-map");
+}
+
 function toPathAssets(file, srcName, assetsName) {
   const lastSlashIndex = file.lastIndexOf(osSlash);
   let modifiedUrl = file.substring(0, lastSlashIndex);
