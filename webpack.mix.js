@@ -16,7 +16,7 @@ mix.setPublicPath("app");
 let configOption = {
   module: {
     rules: [
-      {
+      { 
         test: /\.scss/,
         loader: "import-glob-loader",
       },
